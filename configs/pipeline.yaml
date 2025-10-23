@@ -1,0 +1,29 @@
+
+STAGE1_CONFIG: "/media/yuganlab/ezstore1/Zongye/Code/Diffusion_Based_Grounding/configs/stage1/aekl_v0.yaml"
+LDM_CONFIG: "/media/yuganlab/ezstore1/Zongye/Code/Diffusion_Based_Grounding/configs/ldm/ldm_v0.yaml"
+VAE_WEIGHTS: "/media/yuganlab/ezstore1/Zongye/Code/Diffusion_Based_Grounding/models/autoencoder.pth"
+UNET_WEIGHTS: "/media/yuganlab/ezstore1/Zongye/Code/Diffusion_Based_Grounding/models/diffusion_model.pth"
+
+DEVICE: "cuda:1"
+VERBOSE: true
+
+TEXT_HF_NAME: "stabilityai/stable-diffusion-2-1-base"
+TEXT_TOKENIZER_SUBFOLDER: "tokenizer"
+TEXT_ENCODER_SUBFOLDER: "text_encoder"
+
+DDIM_STEPS: 1000
+TIMESTEP_SPACING: "trailing"
+CLIP_SAMPLE: true
+PATCH_SCHED_METHODS: true
+
+TRAIN_TEXT_ENCODER: false
+TRAIN_VAE: false
+TRAIN_UNET: true
+
+CAPTURE_LAYERS: null
+CAPTURE_PER_HEAD: false
+CONTRAST_L2NORM: true
+CONTRAST_DETACH: false
+
+DTYPE: "float32"
+VAE_SCALING: 0.3

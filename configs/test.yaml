@@ -1,0 +1,4 @@
+ms_csv: /media/yuganlab/ezstore1/Zongye/MS_CXR/MS_CXR_Local_Alignment_v1.1.0.csv
+images_root: "/media/yuganlab/blackstone/xinlong/raw_data/MIMICCXR"
+reports_dir: None
+csv_paths_are_relative: true

@@ -1,0 +1,13 @@
+WEIGHTS:
+  diffusion: 1.0    # 对应 diffusion_loss（pred vs target 的 MSE）
+  vae_l1: 0.0       # 若参与 VAE 重建损失，这里>0
+  vae_kl: 0.0
+  vae_perc: 0.0
+  vae_adv: 0.0
+  simalign: 0.005
+
+SIMALIGN:
+  simalign_tau: 0.07
+  simalign_topk_ratio: 0.15
+  simalign_use_layers: [3,4,6,7]        # e.g., [2,5,8]
+  simalign_inputs_are_unit: false

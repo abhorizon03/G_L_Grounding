@@ -1,0 +1,32 @@
+JSON_PATH: "/media/yuganlab/ezstore1/Zongye/MIMIC_CXR/mimic_annotation_all_multi.json"
+IMAGE_PREFIX: "/media/yuganlab/blackstone/xinlong/raw_data/MIMICCXR/files"
+SPLIT: "train"
+
+CSV1_PATH: "/media/yuganlab/ezstore1/Zongye/MIMICCXR/mimic-cxr-2.0.0-metadata.csv"
+CSV1_DICOM_COL: "dicom_id"
+CSV1_VIEW_COL: "ViewPosition"
+CSV1_KEEP_VIEW: "PA"
+
+CSV2_PATH: "/media/yuganlab/ezstore1/Zongye/MIMICCXR/mimic-cxr-2.0.0-chexpert.csv"
+CSV2_STUDY_COL: "study_id"
+
+PATCH_NUM: 16
+MASK_LEVEL: 0.30
+LIMIT_FIRST_N: null
+ONLY_PA: true
+
+CROP_SIZE: 512
+SCALE_MIN: 0.0
+SCALE_MAX: 255.0
+
+MAX_TEXT_LEN: null
+COUNT_SPECIAL_IN_SENT: false
+
+BATCH_SIZE: 8
+NUM_WORKERS: 4
+SHUFFLE: true
+SEED: 42
+
+MODE: "vae"   # 与你的 forward 检查脚本一致
+SKIP_BAD_LOG: true
+MAX_RESAMPLE: 5
